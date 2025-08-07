@@ -5,6 +5,10 @@
 git clone https://github.com/MohammedBadry/hotels-task.git
 composer install
 cp .env.example .env
+
+Make sure that the session driver is file (We are not using database recently so there is no need for migrations)
+SESSION_DRIVER=file
+
 php artisan key:generate
 php artisan serve
 
