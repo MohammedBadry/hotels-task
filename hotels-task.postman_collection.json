@@ -1,0 +1,174 @@
+{
+	"info": {
+		"_postman_id": "38871d26-eb8f-46a5-9e1f-a05104e91128",
+		"name": "hotels-task",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "8128415"
+	},
+	"item": [
+		{
+			"name": "hotels/search",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "3101|HSAW89MeeWRqifEaaKYlUrzEkQ5hFqUHUFAF2UVz",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "application/gzip",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/api/hotels/search",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"hotels",
+						"search"
+					],
+					"query": [
+						{
+							"key": "location",
+							"value": "Paris",
+							"disabled": true
+						},
+						{
+							"key": "check_in",
+							"value": "2025-08-10",
+							"disabled": true
+						},
+						{
+							"key": "check_out",
+							"value": "2025-08-15",
+							"disabled": true
+						},
+						{
+							"key": "sort_by",
+							"value": "price",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "hotels/search",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "application/gzip",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "127.0.0.1:8000/api/hotels/search?location=Luxor&check_in=2025-08-10&check_out=2025-08-30&sort_by=price",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"hotels",
+								"search"
+							],
+							"query": [
+								{
+									"key": "location",
+									"value": "Luxor"
+								},
+								{
+									"key": "check_in",
+									"value": "2025-08-10"
+								},
+								{
+									"key": "check_out",
+									"value": "2025-08-30"
+								},
+								{
+									"key": "sort_by",
+									"value": "price"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.12"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 07 Aug 2025 15:37:35 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"name\": \"Jolie Ville Hotel & Spa Kings Island Luxor\",\n        \"location\": \"Luxor\",\n        \"price_per_night\": 766.08,\n        \"rating\": 0,\n        \"supplier\": \"tripadvisor\"\n    },\n    {\n        \"name\": \"Steigenberger Resort Achti\",\n        \"location\": \"Luxor\",\n        \"price_per_night\": 877.54,\n        \"rating\": 1,\n        \"supplier\": \"tripadvisor\"\n    },\n    {\n        \"name\": \"Malkata House - Boutique hotel and restaurant\",\n        \"location\": \"Luxor\",\n        \"price_per_night\": 2808,\n        \"rating\": 2,\n        \"supplier\": \"tripadvisor\"\n    },\n    {\n        \"name\": \"Sonesta St. George Hotel - Convention Center\",\n        \"location\": \"Luxor\",\n        \"price_per_night\": 1076.85,\n        \"rating\": 3,\n        \"supplier\": \"tripadvisor\"\n    },\n    {\n        \"name\": \"Iberotel Luxor\",\n        \"location\": \"Luxor\",\n        \"price_per_night\": 902.34,\n        \"rating\": 4,\n        \"supplier\": \"tripadvisor\"\n    },\n    {\n        \"name\": \"Pavillon Winter Luxor\",\n        \"location\": \"Luxor\",\n        \"price_per_night\": 1473.2,\n        \"rating\": 5,\n        \"supplier\": \"tripadvisor\"\n    },\n    {\n        \"name\": \"Pyramisa Hotel Luxor\",\n        \"location\": \"Luxor\",\n        \"price_per_night\": 879.9,\n        \"rating\": 6,\n        \"supplier\": \"tripadvisor\"\n    },\n    {\n        \"name\": \"Aracan Eatabe Luxor Hotel\",\n        \"location\": \"Luxor\",\n        \"price_per_night\": 707.47,\n        \"rating\": 7,\n        \"supplier\": \"tripadvisor\"\n    },\n    {\n        \"name\": \"Nile Cruise Luxor 4 nights Aswan 3 nights\",\n        \"location\": \"Luxor\",\n        \"price_per_night\": 2625.48,\n        \"rating\": 8,\n        \"supplier\": \"tripadvisor\"\n    },\n    {\n        \"name\": \"Queens Valley Hotel\",\n        \"location\": \"Luxor\",\n        \"price_per_night\": 378,\n        \"rating\": 9,\n        \"supplier\": \"tripadvisor\"\n    },\n    {\n        \"name\": \"Abeer Guest House\",\n        \"location\": \"Luxor\",\n        \"price_per_night\": 129.6,\n        \"rating\": 10,\n        \"supplier\": \"tripadvisor\"\n    },\n    {\n        \"name\": \"Jewel Howard Carter Hotel\",\n        \"location\": \"Luxor\",\n        \"price_per_night\": 481.95,\n        \"rating\": 11,\n        \"supplier\": \"tripadvisor\"\n    },\n    {\n        \"name\": \"Pharaohs Guest House\",\n        \"location\": \"Luxor\",\n        \"price_per_night\": 340.2,\n        \"rating\": 12,\n        \"supplier\": \"tripadvisor\"\n    },\n    {\n        \"name\": \"Elphardous Oasis Hotel\",\n        \"location\": \"Luxor\",\n        \"price_per_night\": 619.2,\n        \"rating\": 13,\n        \"supplier\": \"tripadvisor\"\n    },\n    {\n        \"name\": \"Luxor Oasis Guest House\",\n        \"location\": \"Luxor\",\n        \"price_per_night\": 368.9,\n        \"rating\": 14,\n        \"supplier\": \"tripadvisor\"\n    },\n    {\n        \"name\": \"Sofitel Winter Palace Luxor\",\n        \"location\": \"Luxor\",\n        \"price_per_night\": 4109.8,\n        \"rating\": 15,\n        \"supplier\": \"tripadvisor\"\n    },\n    {\n        \"name\": \"Nefertari Nile Cruise From Luxor 4&7 Nights, Every Saturday, Monday And Thursday Including tours\",\n        \"location\": \"Luxor\",\n        \"price_per_night\": 6150,\n        \"rating\": 16,\n        \"supplier\": \"tripadvisor\"\n    },\n    {\n        \"name\": \"Venus Hotel Luxor 日本人 大歓迎\",\n        \"location\": \"Luxor\",\n        \"price_per_night\": 420.75,\n        \"rating\": 17,\n        \"supplier\": \"tripadvisor\"\n    },\n    {\n        \"name\": \"Winter apartment\",\n        \"location\": \"Luxor\",\n        \"price_per_night\": 524.88,\n        \"rating\": 18,\n        \"supplier\": \"tripadvisor\"\n    },\n    {\n        \"name\": \"New Memnon Hotel\",\n        \"location\": \"Luxor\",\n        \"price_per_night\": 700,\n        \"rating\": 19,\n        \"supplier\": \"tripadvisor\"\n    }\n]"
+				}
+			]
+		}
+	]
+}
