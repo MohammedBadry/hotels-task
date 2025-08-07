@@ -73,17 +73,18 @@ TRIPADVISOR_API_KEY=ac9de775e1mshf8a11ee814cd0f7p1841dejsn057b8b254980
 
 #### Booking.com via RapidAPI
 
-1. Visit: [https://rapidapi.com/apidojo/api/booking-com18](https://rapidapi.com/apidojo/api/booking-com18)
-2. Sign in or create a RapidAPI account.
-3. Subscribe to the **Free Plan**.
-4. Copy the **X-RapidAPI-Key** from the endpoints tab.
-5. Add it to `.env` as `BOOKING_API_KEY`.
+1. Visit:
+[https://rapidapi.com/DataCrawler/api/booking-com15/playground/apiendpoint_8f30418d-4a60-45bf-a500-c992fd4bda43](https://rapidapi.com/DataCrawler/api/booking-com15/playground/apiendpoint_8f30418d-4a60-45bf-a500-c992fd4bda43))
+3. Sign in or create a RapidAPI account.
+4. Subscribe to the **Free Plan**.
+5. Copy the **X-RapidAPI-Key** from the endpoints tab.
+6. Add it to `.env` as `BOOKING_API_KEY`.
 
 ---
 
 #### Tripadvisor via RapidAPI
 
-1. Visit: [https://rapidapi.com/apidojo/api/tripadvisor1](https://rapidapi.com/apidojo/api/tripadvisor1)
+1. Visit: [https://rapidapi.com/DataCrawler/api/tripadvisor16/playground/apiendpoint_6c187918-f989-4c63-bf1e-b2e38efe3152](https://rapidapi.com/DataCrawler/api/tripadvisor16/playground/apiendpoint_6c187918-f989-4c63-bf1e-b2e38efe3152)
 2. Sign in or create a RapidAPI account.
 3. Subscribe to the **Free Plan**.
 4. Copy the **X-RapidAPI-Key** from the endpoints tab.
