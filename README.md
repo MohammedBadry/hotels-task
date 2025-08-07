@@ -86,5 +86,7 @@ TRIPADVISOR_API_KEY=ac9de775e1mshf8a11ee814cd0f7p1841dejsn057b8b254980
 5. Add it to `.env` as `TRIPADVISOR_API_KEY`.
 
 ---
+I added a postman collection file in the main directory you can use it "hotels-task.postman_collection.json"
+---
 
 Once you have added the required credentials to your environment file, the APIs will be available for use in the application.
